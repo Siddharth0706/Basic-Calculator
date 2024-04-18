@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input class="display" id="display" type="text" readonly />
+      <div class="keys">
+        <div class="row">
+          <div class="button-div">
+            <button class="circle ac-backspace" onclick="clearDisplay()">
+              AC
+            </button>
+          </div>
+          <div class="button-div">
+            <button class="circle oprtr-btn" onclick="appendToDisplay('()')">
+              ()
+            </button>
+          </div>
+          <div class="button-div">
+            <button class="circle oprtr-btn" onclick="appendToDisplay('%')">
+              %
+            </button>
+          </div>
+          <div class="button-div">
+            <button class="circle oprtr-btn" onclick="appendToDisplay(' / ')">
+              ÷
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="button-div">
+            <button class="circle num-btn" onclick="appendToDisplay('7')">
+              7
+            </button>
+          </div>
+          <div class="button-div">
+            <button class="circle num-btn" onclick="appendToDisplay('8')">
+              8
+            </button>
+          </div>
+          <div class="button-div">
+            <button class="circle num-btn" onclick="appendToDisplay('9')">
+              9
+            </button>
+          </div>
+          <div class="button-div">
+            <button class="circle oprtr-btn" onclick="appendToDisplay(' * ')">
+              ×
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="button-div">
+            <button class="circle num-btn" onclick="appendToDisplay('4')">
+              4
+            </button>
+          </div>
+          <div class="button-div">
+            <button class="circle num-btn" onclick="appendToDisplay('5')">
+              5
+            </button>
+          </div>
+          <div class="button-div">
+            <button class="circle num-btn" onclick="appendToDisplay('6')">
+              6
+            </button>
+          </div>
+          <div class="button-div">
+            <button class="circle oprtr-btn" onclick="appendToDisplay(' - ')">
+              -
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="button-div">
+            <button class="circle num-btn" onclick="appendToDisplay('1')">
+              1
+            </button>
+          </div>
+          <div class="button-div">
+            <button class="circle num-btn" onclick="appendToDisplay('2')">
+              2
+            </button>
+          </div>
+          <div class="button-div">
+            <button class="circle num-btn" onclick="appendToDisplay('3')">
+              3
+            </button>
+          </div>
+          <div class="button-div">
+            <button class="circle oprtr-btn" onclick="appendToDisplay(' + ')">
+              +
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="button-div">
+            <button class="circle num-btn" onclick="appendToDisplay('.')">
+              .
+            </button>
+          </div>
+          <div class="button-div">
+            <button class="circle num-btn" onclick="appendToDisplay('0')">
+              0
+            </button>
+          </div>
+          <div class="button-div">
+            <button class="circle ac-backspace" onclick="backspace()">⌫</button>
+          </div>
+          <div class="button-div">
+            <button class="circle equal" onclick="calculate()">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
